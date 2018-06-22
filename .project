@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Bootstrap2</name>
+=======
+	<name>bootstrap</name>
+>>>>>>> 421616417bcb6e87c85802bb20f36cf5c97a4b3b
 	<comment></comment>
 	<projects>
 	</projects>
