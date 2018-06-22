@@ -16,6 +16,7 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="../css-common/toggle.css" rel="stylesheet" type='text/css'>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -1085,6 +1086,15 @@
         </div>
       </div>
     </footer>
+   	<!-- Fixed Navigation Button -->
+	<div class="fixed-bottom">
+		<label class="switch">
+				<input type="checkbox" checked data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">
+  				<span class="slider round" onclick="setTimeout(function(){window.location.href='../client/index.html'},2000);"></span>
+		</label>
+		<div class="switch-text multi-collapse collapse show" id="multiCollapse1"><p>관리자 모드 on</p></div>
+		<div class="switch-text multi-collapse collapse" id="multiCollapse2"><p>관리자 모드 off</p></div>
+	</div>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
