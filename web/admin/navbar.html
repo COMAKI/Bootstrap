@@ -18,6 +18,7 @@
     <!--custom font-->
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script'
           rel='stylesheet' type='text/css'>
+    <link href="../css-common/toggle.css" rel="stylesheet" type='text/css'>
 
     <style>
         #mainNav .navbar-brand {
@@ -98,6 +99,24 @@
                 <!--</a>-->
             <!--</li>-->
         <!--</ul>-->
+
+        <!-- Fixed Navigation Button -->
+        <div class="fixed-bottom">
+            <div class="nav-switch">
+                <div class="switch-text">관리자 모드</div>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch"
+                           class="onoffswitch-checkbox" id="myonoffswitch" checked> <label
+                        class="onoffswitch-label"
+                        onclick="setTimeout(function(){window.location.href='../client/index.html'},2000);"
+                        for="myonoffswitch"> <span
+                        class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+
+            </div>
+        </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown"
