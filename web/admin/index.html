@@ -1087,13 +1087,21 @@
       </div>
     </footer>
    	<!-- Fixed Navigation Button -->
-	<div class="fixed-bottom">
-		<label class="switch">
-				<input type="checkbox" checked data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">
-  				<span class="slider round" onclick="setTimeout(function(){window.location.href='../client/index.html'},2000);"></span>
-		</label>
-		<div class="switch-text multi-collapse collapse show" id="multiCollapse1"><p>관리자 모드 on</p></div>
-		<div class="switch-text multi-collapse collapse" id="multiCollapse2"><p>관리자 모드 off</p></div>
+		<div class="fixed-bottom">
+		<div class="nav-switch">
+			<div class="switch-text">관리자 모드</div>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" 
+					class="onoffswitch-checkbox" id="myonoffswitch" checked> <label
+					class="onoffswitch-label"
+					onclick="setTimeout(function(){window.location.href='../client/index.html'},2000);"
+					for="myonoffswitch"> <span
+					class="onoffswitch-inner"></span> 
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+
+		</div>
 	</div>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">

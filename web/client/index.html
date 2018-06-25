@@ -753,13 +753,22 @@
 
 	<!-- Fixed Navigation Button -->
 	<div class="fixed-bottom">
-		<label class="switch">
-				<input type="checkbox" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">
-  				<span class="slider round" onclick="setTimeout(function(){window.location.href='../admin/index.html'},2000);"></span>
-		</label>
-		<div class="switch-text collapse show multi-collapse" id="multiCollapse1"><p>관리자 모드 off</p></div>
-		<div class="switch-text collapse multi-collapse" id="multiCollapse2"><p>관리자 모드 on</p></div>
+		<div class="nav-switch">
+			<div class="switch-text">관리자 모드</div>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" 
+					class="onoffswitch-checkbox" id="myonoffswitch"> <label
+					class="onoffswitch-label"
+					onclick="setTimeout(function(){window.location.href='../admin/index.html'},2000);"
+					for="myonoffswitch"> <span
+					class="onoffswitch-inner"></span> 
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+
+		</div>
 	</div>
+
 
 	<!-- Portfolio Modals -->
 
